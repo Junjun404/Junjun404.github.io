@@ -3,6 +3,8 @@ import type { Post } from '../lib/posts';
 import { render } from 'astro:content';
 import TagBadge from '../components/TagBadge.astro';
 import Comments from '../components/Comments.astro';
+// KaTeX 样式（公式排版与字体），只在文章页引入
+import 'katex/dist/katex.min.css';
 
 interface Props {
   post: Post;
